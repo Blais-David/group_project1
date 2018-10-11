@@ -1,0 +1,77 @@
+body {
+    background: url("../images/symphony.png")
+}
+
+h1 {
+    text-align: center;
+
+}
+
+.main {
+    position:absolute;
+    background: #50a3a2;
+    height: 700px;
+    top: 50px;
+    left: 260px;
+}
+
+.search-area {
+    position: relative;
+    top : 170px;
+    left: 365px;
+}
+.hide {
+    display: none;
+}
+
+#greetings{
+    position:relative;
+    font-family: 'Flavors', 'cursive';
+    font-size: 85px;
+    line-height: 1.5;
+    top: 50px;
+    
+
+}
+
+#app-name {
+    position: relative;
+    font-family: 'Nosifer', 'cursive';
+    background: #ff3800;
+    font-size: 80px;
+    line-height: 1.5;
+    top: 110px;
+    left: 90px;
+}
+
+#search-btn{
+    background: #420ce8;
+    position: relative;
+    top: 20px;
+    left: 125px;
+    color: #ccc;
+
+}
+
+
+
+
+@media screen and (max-width: 575.98px) { 
+    #app-name {
+        font-size: 40px;
+        position: relative;
+        left: 0px;
+    }
+}
+@media screen and (max-width: 767.98px) { 
+    #app-name {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 991.98px) { 
+    #app-name {
+        font-size: 40px;
+    }
+}
+   
