@@ -5,26 +5,21 @@ const getTM = function(artistName) {
     method: "GET"
   }).then(function(response) {
 
-    let eventsList = response._embedded.events[1].name;
-    const header1 = $("#htmlAName");
-    const newh1 = $("<h1>");
-
-    newh1.text(`${eventsList}`);
-    header1.append(newh1);
+    
 
 
     for (let i = 0; i < response._embedded.events.length; i++) {
       
       console.log(response);
     //   console.log(response._embedded.events[i].dates.start.localDate);
-      
+    let eventsList = response._embedded.events[i].name;
       let eventDate = response._embedded.events[i].dates.start.localDate;
       let eventURL = response._embedded.events[i].url;
 
       const display = $("#display");
       const newDiv = $("<div>");
 
-      newDiv.html(`<p><em>${eventDate}</em></p>`);
+      newDiv.html(`<h1>${eventsList}</h1><p><em>${eventDate}</em></p>`);
 
       display.append(newDiv);
 
