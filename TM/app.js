@@ -4,7 +4,10 @@ const runArtistSearch = function(e) {
   const input = $("#artist").val().trim();
   $("#artist").val("");
   getTM(input);
+<<<<<<< HEAD
   getTMwLoc(input);
+=======
+>>>>>>> 8a99982c488710621f8a21185537e8a961697c8c
 };
 
 //For Clearing data
