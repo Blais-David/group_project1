@@ -1,3 +1,7 @@
+// https://app.ticketmaster.com/discovery/v2/events.json?apikey=MdV4MZfCLGKGQ2tYAK3tZAsVQk74dUcp&keyword=${artistName}&radius=${userRadius}&city=${userCity}
+// https://app.ticketmaster.com/discovery/v2/events.json?apikey=MdV4MZfCLGKGQ2tYAK3tZAsVQk74dUcp&keyword=${artistName}
+// https://app.ticketmaster.com/discovery/v2/events.json?apikey=MdV4MZfCLGKGQ2tYAK3tZAsVQk74dUcp&keyword=${artistName}&latlong=${lat},${long}&radius=100
+
 const getTM = function(artistName) {
 
   const queryURL = `https://app.ticketmaster.com/discovery/v2/events.json?apikey=MdV4MZfCLGKGQ2tYAK3tZAsVQk74dUcp&keyword=${artistName}`;
@@ -7,6 +11,7 @@ const getTM = function(artistName) {
     url: queryURL,
     method: "GET"
   }).then(function(response) {
+    console.log(response);
     const display2 = $("#display2")
     const display0 = $("#artImage")
     const newDiv2 = $("<div>");

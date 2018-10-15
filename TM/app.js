@@ -4,7 +4,7 @@ const runArtistSearch = function(e) {
   const input = $("#artist").val().trim();
   $("#artist").val("");
   getTM(input);
-  getTMwLoc(input);
+  // getTMwLoc(input);
 };
 
 //For Clearing data
@@ -19,4 +19,3 @@ const clearDiv = function(e) {
 
 $("#searchA").on("click", runArtistSearch);
 $("#clear").on("click", clearDiv);
-
