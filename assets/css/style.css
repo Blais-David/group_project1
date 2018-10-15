@@ -1,0 +1,160 @@
+body {
+    background: url("../images/symphony.png")
+}
+
+h1 {
+    text-align: center;
+
+}
+
+.home-page {
+    /* position:absolute; */
+    background: #50a3a2;
+    height: 700px;
+    top: 50px;
+    left: 260px;
+}
+
+.search-area {
+    position: relative;
+    top : 170px;
+    left: 355px;
+}
+.hide {
+    display: none;
+}
+
+#greetings {
+    position:relative;
+    font-family: 'Flavors', 'cursive';
+    top: 60px;
+    left: 0px;
+}
+
+#greetings-text {
+    font-size: 85px;
+    line-height: 1.5;
+}
+
+.app-name {
+    position: relative;
+    font-family: 'Nosifer', 'cursive';
+    top: 130px;
+    left: 95px;
+}
+
+.app-text  {
+    background: #ff3800;
+    font-size: 80px;
+    line-height: 1.5;
+}
+
+
+#search-btn{
+    background: #420ce8;
+    position: relative;
+    top: 20px;
+    left: 70px;
+    color: #ccc;
+    justify-content: center;
+}
+
+#search-label {
+    font-size: 20px;
+    font-weight: bold;
+    color: #353838;
+}
+
+.result-page {
+    background: #fff;
+}
+
+.naviguation {
+    background: #50a3a2;
+}
+
+.result-header {
+    font-family: 'Nosifer', 'cursive';
+    background: #ff3800;
+}
+
+.result-subtitle {
+    margin: 30px 5px;
+}
+
+#result-appName {
+    margin-top: 35px;
+    margin-left: 125px;
+    font-size: 80px;
+    line-height: 1.5;
+}
+
+
+
+
+
+@media screen and (min-width: 576px) { 
+    .app-name {
+        font-size: 40px;
+        position: relative;
+        left: 40px;
+    }
+    .app-text {
+        font-size: 54px;
+    }
+    .search-area {
+        position: relative;
+        top : 150px;
+        left: 85px;
+    }
+    #result-appName {
+        font-size: 40px;
+        margin-left: 24px;
+        margin-top: 14px;
+    }
+}
+@media screen and (min-width: 768px) { 
+    .app-name {
+        font-size: 40px;
+    }
+    .app-text {
+        font-size: 75px;
+    }
+    .search-area {
+        position: relative;
+        top : 150px;
+        left: 225px;
+    }
+    #result-appName {
+        font-size: 60px;
+        margin-left: 30px;
+        margin-top: 14px;
+    }
+}
+
+@media screen and (min-width: 992px) { 
+    .app-name {
+        position: relative;
+        left: 85px;
+    }
+    .app-text {
+        font-size: 75px;
+    }
+    .search-area {
+        position: relative;
+        top : 170px;
+        left: 390px;
+    }
+    #search-btn{
+        position: relative;
+        top: 20px;
+        left: 90px;
+    
+    }
+    #result-appName {
+        font-size: 83px;
+        margin-left: 30px;
+        margin-top: 14px;
+    }
+}
+   
