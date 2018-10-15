@@ -7,6 +7,4 @@ $.ajax({
 }).then(function(response) {
 
     const youtubeDiv = $('<div>').addClass('video-player');
-
-    const 
 }
