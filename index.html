@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,35 +16,188 @@
 </head>
 
 <body>
-
     <div class="container">
-        <div class="container home-page main">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 class="text-white" id="greetings">Welcome to</h1>
-                </div>
-            </div>
-            <div class="row" style="font-size: 80px">
-                <div class="col-md-10">
-                    <h1 id="app-name">
-                        <strong>
-                            Muzipedia
-                            <i class="fas fa-headphones"></i>
-                        </strong>
-                    </h1>
-                </div>
-            </div>
-            <form class="search-area">
-                <div class="form-row">
-                    <div class="col-md-4 ">
-                        <label for="artist-input">Search Artist</label>
-                        <input type="text" class="form-control" placeholder="Please enter an artist" id="searchInputField">
+        <div class="row home-page hide">
+            <div class="col-md-12 col-12 col-sm-12 col-lg-12">
+
+                <div class="row" id="greetings">
+                    <div class="col-md-12">
+                        <h1 class="text-white" id="greetings-text">Welcome to</h1>
                     </div>
                 </div>
-                <button class="btn" type="submit" id="search-btn">Learn More</button>
-            </form>
 
+                <div class="row app-name">
+                    <div class="col-md-10 col-sm-10 col-10">
+                        <h1 class="app-text">
+                            <strong>
+                                Muzipedia
+                                <i class="fas fa-headphones"></i>
+                            </strong>
+                        </h1>
+                    </div>
+                </div>
+
+                <div class="row search-area">
+                    <div class="col-md-12 col-12 col-sm-12">
+                        <form>
+                            <div class="form-group">
+                                <div class="col-md-6 col-6 col-sm-6">
+                                    <label class="ml-4" for="artist-input" id="search-label">Search Artist</label>
+                                    <input type="text" class="form-control" placeholder="Please enter an artist" id="searchInputField">
+                                </div>
+                                <button class="btn" type="submit" id="search-btn">Learn More</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="row result-page">
+            <div class="col-12 col-sm-12 col-md-12">
+                <div class="row">
+                    <div class="col-3 col-sm-3 col-md-2 naviguation">
+                        <nav id="navbar-result" class="navbar">
+                            <div class="navbar-nav">
+                                <a class="navbar-brand">
+                                    <strong>
+                                        <i class="fas fa-headphones"></i>
+                                        Menu
+                                    </strong>
+                                </a>
+                            </div>
+                            <div class="navbar-nav">
+                                <a class="nav-item nav-link active" href="#bio">Bio<span class="sr-only">(current)</span></a>
+                                <a class="nav-item nav-link active" href="#playlist">Playlist<span class="sr-only">(current)</span></a>
+                                <a class="nav-item nav-link active" href="#events">Events<span class="sr-only">(current)</span></a>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-9 col-sm-9 col-md-10" data-spy="scroll" data-target="#navbar-result" data-offset="0">
+                        <div class="row result-header">
+                            <h1 id="result-appName">
+                                <strong>
+                                    Muzipedia
+                                    <i class="fas fa-headphones"></i>
+                                </strong>
+                            </h1>
+                        </div>
+                        <div class="row bio">
+                            <div class="col-md-12">
+                                <h2 class="result-subtitle" id="bio">Biography</h2>
+                            </div>
+                        </div>
+                        <div class="row about-artist d-flex justify-content-center">
+                            <div class="col-md-8 ">
+                                <div class="card">
+                                    <div class="card-header text-center">
+                                        Artist NAME
+                                    </div>
+                                    <div class="card-body">
+                                        <img src="https://placehold.it/200x200" class="card-img-left rounded mx-auto d-block"
+                                            alt="artist picture">
+                                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the 1500s, when an unknown printer took a galley of type
+                                            and scrambled it to make a type specimen book. It has survived not only
+                                            five centuries, but also the leap into electronic typesetting, remaining
+                                            essentially unchanged. It was popularised in the 1960s with the release of
+                                            Letraset sheets containing Lorem Ipsum passages, and more recently with
+                                            desktop publishing software like Aldus PageMaker including versions of
+                                            Lorem Ipsum.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row playlist">
+                            <div class="col-md-12">
+                                <h2 class="result-subtitle" id="playlist">Playlist</h2>
+                            </div>
+                        </div>
+                        <div class="row playlist-videos">
+                            <div class="col-md-4">
+                                <div class="embed-responsive embed-responsive-4by3">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/k6M5C-oKw9k"></iframe>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="embed-responsive embed-responsive-4by3">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/k6M5C-oKw9k"></iframe>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="embed-responsive embed-responsive-4by3">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/k6M5C-oKw9k"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row events">
+                            <div class="col-md-12">
+                                <h2 class="result-subtitle" id="events">Events</h2>
+                            </div>
+                        </div>
+                        <div class="row events-view">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h6 class="card-title">
+                                            <strong>
+                                                Event
+                                            </strong>
+                                        </h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">Event Name</p>
+                                        <p class="card-text">Venue</p>
+                                        <p class="card-text">Adrress</p>
+                                        <p class="card-text">Date</p>
+                                        <p class="card-text">Link</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h6 class="card-title">
+                                            <strong>
+                                                Event
+                                            </strong>
+                                        </h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">Event Name</p>
+                                        <p class="card-text">Venue</p>
+                                        <p class="card-text">Adrress</p>
+                                        <p class="card-text">Date</p>
+                                        <p class="card-text">Link</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h6 class="card-title">
+                                            <strong>
+                                                Event
+                                            </strong>
+                                        </h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">Event Name</p>
+                                        <p class="card-text">Venue</p>
+                                        <p class="card-text">Adrress</p>
+                                        <p class="card-text">Date</p>
+                                        <p class="card-text">Link</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
 </body>

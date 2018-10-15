@@ -6,15 +6,15 @@ const runArtistSearch = function(e) {
   getTM(input);
 };
 
-// For location search
-const runLocationSearch = function(e) {
-  e.preventDefault();
-  const input2 = $("#userRadius").val();
-  const input3 = $("#userCityName").val();
-  $("userRadius","#userCityName").val("");
-  getTMloc(input2, input3);
-  console.log(input2, input3)
-};
+// // For location search
+// const runLocationSearch = function(e) {
+//   e.preventDefault();
+//   const input2 = $("#userRadius").val();
+//   const input3 = $("#userCityName").val();
+//   $("userRadius","#userCityName").val("");
+//   getTMloc(input2, input3);
+//   console.log(input2, input3)
+// };
 
 
 //For Clearing data
