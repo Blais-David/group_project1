@@ -1,4 +1,4 @@
-const getTM = function(artistName) {
+const getTMwLoc = function(artistName) {
   
   
     navigator.geolocation.getCurrentPosition(function(position){
