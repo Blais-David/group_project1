@@ -4,27 +4,19 @@ const runArtistSearch = function(e) {
   const input = $("#artist").val().trim();
   $("#artist").val("");
   getTM(input);
+  getTMwLoc(input);
 };
-
-// // For location search
-// const runLocationSearch = function(e) {
-//   e.preventDefault();
-//   const input2 = $("#userRadius").val();
-//   const input3 = $("#userCityName").val();
-//   $("userRadius","#userCityName").val("");
-//   getTMloc(input2, input3);
-//   console.log(input2, input3)
-// };
-
 
 //For Clearing data
 const clearDiv = function(e) {
   e.preventDefault();
   $("#display").empty();
+  $("#display2").empty();
   $("#htmlAName").empty();
-  console.log("peanut");
+  $("#artImage").empty();
 };
 
-$("#searchNY").on("click", runLocationSearch);
+
 $("#searchA").on("click", runArtistSearch);
 $("#clear").on("click", clearDiv);
+
