@@ -6,39 +6,25 @@ const getTMwLoc = function(artistName) {
       const long = (position.coords.longitude);
       console.log(lat, long)
     
-  
-    // const queryURL = `https://app.ticketmaster.com/discovery/v2/events.json?apikey=MdV4MZfCLGKGQ2tYAK3tZAsVQk74dUcp&keyword=${artistName}`;
     const queryURL = `https://app.ticketmaster.com/discovery/v2/events.json?apikey=MdV4MZfCLGKGQ2tYAK3tZAsVQk74dUcp&keyword=${artistName}&radius=100&latlong=${lat},${long}`
-    console.log(queryURL);
+    
     $.ajax({
       url: queryURL,
       method: "GET"
     }).then(function(response) {
       const display2 = $("#display2")
-      const display0 = $("#artImage")
       const newDiv2 = $("<div>");
-      let img1 = new Image();
-  
+      
   
       for (let i = 0; i < response._embedded.events.length; i++) {
-        console.log(response);
         const display = $("#display");
           const newDiv = $("<div>");
   
           if (response._embedded.events[i].classifications[0].segment.name == "Music"){
-          //   console.log(response._embedded.events[i].dates.start.localDate);
+        
           let eventsList = response._embedded.events[i].name;
           let eventDate = response._embedded.events[i].dates.start.localDate;
           let eventURL = response._embedded.events[i].url;
-          let artistImg = response._embedded.events[0].images[3].url;
-          
-          img1.src = `${artistImg}`;
-          img1.alt = 'Artist Image';
-          img1.height = '300'
-          display0.append(img1);
-          
-          // console.log(artistImg);
-          // console.log(eventsList);
               
   
           newDiv.html(`<h1>${eventsList}</h1><p><em>${eventDate}</em></p>`);
@@ -46,8 +32,7 @@ const getTMwLoc = function(artistName) {
           display.append(newDiv);
   
           for (let j = 0; j < response._embedded.events[i]._embedded.venues.length; j++) {
-            // console.log(response._embedded.events[i]._embedded.venues)
-            // console.log(response._embedded.events[i]._embedded.venues[j].name, response._embedded.events[i]._embedded.venues[j].city.name, response._embedded.events[i]._embedded.venues[j].state.name);
+            
             let venueName = response._embedded.events[i]._embedded.venues[j].name;
             let venueCity = response._embedded.events[i]._embedded.venues[j].city.name;
   
@@ -66,8 +51,6 @@ const getTMwLoc = function(artistName) {
               newDiv.html(`<p><strong>${venueName}</strong> at ${venueAddress} ${venueCity}, ${venueCountry}</p> <p><a href=${eventURL}>Link to Event</a></p>`);
   
               display.append(newDiv);
-  
-              console.log("cashew");
             }
           }
         
