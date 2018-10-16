@@ -14,6 +14,7 @@ const showResult = function (e) {
     getTM(input);
     $("#display-event").empty();
     $("#display-event2").empty();
+    $("#display-videos").empty();
 }
 
 const showHome = function () {
