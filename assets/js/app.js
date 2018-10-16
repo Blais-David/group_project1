@@ -2,13 +2,13 @@
 
 const showResult = function (e) {
     e.preventDefault();
-    $(".home-page").addClass("hide");
-    $(".result-page").removeClass("hide");
     const input = $("#searchInputField").val().trim();
-    $("#searchInputField").val("");
-    console.log(input);
     getTM(input);
     getTMwLoc(input);
+    requestBio(input);
+    $(".home-page").addClass("hide");
+    $(".result-page").removeClass("hide");
+    $("#searchInputField").val("");
 }
 
 const showHome = function () {
