@@ -16,7 +16,7 @@ const getVideos = function (artistSearch) {
             const videoIdent = videos[i].id.videoId;
             console.log(videoIdent);
 
-            const youTubePlayer = $(`<iframe width="256" height="144" src="https://www.youtube.com/embed/${videoIdent}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`);
+            const youTubePlayer = $(`<iframe width="480" height="270" src="https://www.youtube.com/embed/${videoIdent}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`);
             $('#player').append(youTubePlayer);
 
         }
