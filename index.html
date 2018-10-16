@@ -91,20 +91,10 @@
                             <div class="col-md-8 ">
                                 <div class="card">
                                     <div class="card-header text-center" id="artist-name">
-                                        Artist NAME
+                                        
                                     </div>
-                                    <div class="card-body">
-                                        <img src="https://placehold.it/200x200" class="card-img-left rounded mx-auto d-block"
-                                            alt="artist picture">
-                                        <p class="card-text text-justify mt-4">Lorem Ipsum is simply dummy text of the printing and
-                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
-                                            text ever since the 1500s, when an unknown printer took a galley of type
-                                            and scrambled it to make a type specimen book. It has survived not only
-                                            five centuries, but also the leap into electronic typesetting, remaining
-                                            essentially unchanged. It was popularised in the 1960s with the release of
-                                            Letraset sheets containing Lorem Ipsum passages, and more recently with
-                                            desktop publishing software like Aldus PageMaker including versions of
-                                            Lorem Ipsum.</p>
+                                    <div class="card-body" id="artist-meta">
+                  
                                     </div>
                                 </div>
                             </div>
@@ -119,9 +109,14 @@
                         <div class="row events">
                             <div class="col-md-12">
                                 <h2 class="result-subtitle" id="events">Events</h2>
+                                <div><p><input type="checkbox" aria-label="toggle local" id="checkbox1"> Show Only Local Events</p>
+                                    
+                                </div>
+                            
                             </div>
                         </div>
                         <div class="row events-view" id="display-event"></div>
+                        <div class="row events-view" id="display-event2" style="display:none;"></div>
                         <div class="row">
                             <div class="col-3 col-sm-3 col-md-3 ml-auto mt-4 d-flex bd-highlight">
                                 <button type="button" class="btn btn-link ml-auto bd-highlight return">Return to Home</button>
@@ -136,8 +131,12 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="assets/js/getVideo.js"></script>
     <script src="assets/js/app.js"></script>
-    <!-- <script src="assets/js/getTMwLoc.js"></script> -->
+    <script src="assets/js/getTMwLoc.js"></script>
     <script src="assets/js/getTM.js"></script> -->
+    
+    <script src="assets/js/apirequests.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 
 </body>
 
