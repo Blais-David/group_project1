@@ -22,7 +22,7 @@ const requestBio = function (userQuery) {
         }
         // create final HTML components
         const artistImage = $(`<img src="${imageURL}" class="card-img-left rounded mx-auto d-block" alt="artist picture">`);
-        const bio = $(`<p class="card-text text-justify mt-4">${bioFinal}</p>`);
+        const bio = $(`<p class="card-text text-justify mt-4">${bioFinal}</p><i><small><p style="color:gray; float:right; margin-bottom:10px">-Last.fm™</i></small></p>`);
 
         //clear out the artist-meta card div
         $('#artist-meta').html("");
