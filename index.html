@@ -17,45 +17,19 @@
 
 <body>
     <div class="container">
-        <div class="row home-page">
-            <div class="col-md-12 col-12 col-sm-12 col-lg-12">
-
-                <div class="row" id="greetings">
-                    <div class="col-md-12">
-                        <h1 class="text-white" id="greetings-text">Welcome to</h1>
-                    </div>
-                </div>
-
-                <div class="row app-name">
-                    <div class="col-md-10 col-sm-10 col-10">
-                        <h1 class="app-text">
-                            <strong>
-                                Muzipedia
-                                <i class="fas fa-headphones"></i>
-                            </strong>
-                        </h1>
-                    </div>
-                </div>
-
-                <div class="row search-area">
-                    <div class="col-md-12 col-12 col-sm-12">
-                        <form>
-                            <div class="form-group">
-                                <div class="col-md-6 col-6 col-sm-6">
-                                    <label class="ml-4" for="artist-input" id="search-label">Search Artist</label>
-                                    <input type="text" class="form-control" placeholder="Please enter an artist" id="searchInputField">
-                                </div>
-                                <button class="btn" type="submit" id="search-btn">Learn More</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+        <div class="row home-page d-flex justify-content-center">
+            <div class="col-md-8 col-8 col-sm-8 col-lg-8 p-3">
+                <h1 class="app-text">Muzipedia<i class="fas fa-headphones" id="logo"></i></h1>
+            </div>
+            <div class="col-md-8 col-8 col-sm-8 col-lg-8 p-3">
+                <input type="text" class="form-control" placeholder="What artist would you like to search?" id="searchInputField">
+                <button class="btn m-2" type="submit" id="search-btn">Go!</button>
             </div>
         </div>
         <div class="row result-page hide">
-            <div class="col-12 col-sm-12 col-md-12">
+            <div class="col-12 col-sm-12 col-md-12 p-3">
                 <div class="row">
-                    <div class="col-3 col-sm-3 col-md-2 naviguation">
+                    <div class="col-3 col-sm-3 col-md-2 navigation">
                         <nav id="navbar-result" class="navbar">
                             <div class="navbar-nav">
                                 <a class="navbar-brand">
@@ -91,10 +65,10 @@
                             <div class="col-md-8 ">
                                 <div class="card">
                                     <div class="card-header text-center" id="artist-name">
-                                        
+
                                     </div>
                                     <div class="card-body" id="artist-meta">
-                  
+
                                     </div>
                                 </div>
                             </div>
@@ -109,10 +83,12 @@
                         <div class="row events">
                             <div class="col-md-12">
                                 <h2 class="result-subtitle" id="events">Events</h2>
-                                <div><p><input type="checkbox" aria-label="toggle local" id="checkbox1"> Show Only Local Events</p>
-                                    
+                                <div>
+                                    <p><input type="checkbox" aria-label="toggle local" id="checkbox1"> Show Only Local
+                                        Events</p>
+
                                 </div>
-                            
+
                             </div>
                         </div>
                         <div class="row events-view" id="display-event"></div>
@@ -126,16 +102,18 @@
                 </div>
             </div>
         </div>
-        
+
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
     <script src="assets/js/getVideo.js"></script>
     <script src="assets/js/app.js"></script>
     <script src="assets/js/getTMwLoc.js"></script>
     <script src="assets/js/getTM.js"></script>
-    
+
     <script src="assets/js/apirequests.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
     <script src="youtube.js"></script>
     <script src="assets/js/app.js"></script>
 
