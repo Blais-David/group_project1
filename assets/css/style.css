@@ -1,16 +1,18 @@
 body {
-    background: url("../images/symphony.png")
+    background: url("../images/symphony.png");
+    height: 100%;
+    width: 100%;
 }
 
 h1 {
-    text-align: center;
 
 }
 
 .home-page {
     /* position:absolute; */
-    background: #50a3a2;
-    height: 700px;
+    background: rgb(63,63,191,0.33);
+    border: 1px solid black;
+    height: 100%;
     top: 50px;
     left: 260px;
 }
@@ -25,7 +27,7 @@ h1 {
 }
 
 #greetings {
-    position:relative;
+
     font-family: 'Flavors', 'cursive';
     top: 60px;
     left: 0px;
@@ -37,32 +39,27 @@ h1 {
 }
 
 .app-name {
-    position: relative;
+
     font-family: 'Nosifer', 'cursive';
     top: 130px;
     left: 95px;
 }
 
 .app-text  {
-    background: #ff3800;
     font-size: 80px;
     line-height: 1.5;
 }
 
 #search-btn{
-    background: #420ce8;
-    position: relative;
-    top: 20px;
-    left: 70px;
-    color: #ccc;
+
     justify-content: center;
 }
 
-#search-label {
+/* #search-label {
     font-size: 20px;
     font-weight: bold;
     color: #353838;
-}
+} */
 
 #artist-name {
     background: #420ce8;
@@ -74,8 +71,8 @@ h1 {
     background: #fff;
 }
 
-.naviguation {
-    background: #50a3a2;
+.navigation {
+    
 }
 
 .result-header {
