@@ -9,6 +9,8 @@ const showResult = function (e) {
     $(".home-page").addClass("hide");
     $(".result-page").removeClass("hide");
     $("#searchInputField").val("");
+    $("#display-event").empty();
+    $("#display-event2").empty();
 }
 
 const showHome = function () {
