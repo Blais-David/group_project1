@@ -9,6 +9,9 @@ const showResult = function (e) {
     $(".home-page").addClass("hide");
     $(".result-page").removeClass("hide");
     $("#searchInputField").val("");
+    console.log(input);
+    getVideo(input);
+    getTM(input);
     $("#display-event").empty();
     $("#display-event2").empty();
 }
