@@ -12,6 +12,8 @@ const showResult = function (e) {
     console.log(input);
     getVideo(input);
     getTM(input);
+    $("#display-event").empty();
+    $("#display-event2").empty();
 }
 
 const showHome = function () {
