@@ -93,6 +93,15 @@ h1 {
     font-size: 80px;
     line-height: 1.5;
 }
+.event-card {
+    margin-top: 45px;
+}
+.state {
+    color: #ff3800;
+}
+.event-date {
+    color: green;
+}
 
 
 

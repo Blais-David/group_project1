@@ -1,10 +1,11 @@
+
 // For artist search
 const runArtistSearch = function(e) {
   e.preventDefault();
   const input = $("#artist").val().trim();
   $("#artist").val("");
-  getTM(input);
-  // getTMwLoc(input);
+  //getTM(input);
+  getTMwLoc(input);
 };
 
 //For Clearing data

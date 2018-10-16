@@ -17,7 +17,7 @@
 
 <body>
     <div class="container">
-        <div class="row home-page hide">
+        <div class="row home-page">
             <div class="col-md-12 col-12 col-sm-12 col-lg-12">
 
                 <div class="row" id="greetings">
@@ -52,7 +52,7 @@
                 </div>
             </div>
         </div>
-        <div class="row result-page">
+        <div class="row result-page hide">
             <div class="col-12 col-sm-12 col-md-12">
                 <div class="row">
                     <div class="col-3 col-sm-3 col-md-2 naviguation">
@@ -84,7 +84,7 @@
                         <div class="row bio">
                             <div class="col-md-12 d-flex bd-highlight">
                                 <h2 class="result-subtitle flex-grow-1" id="bio">Biography</h2>
-                                <button type="button" class="btn btn-link bd-highlight" id="return">Return to Home</button>
+                                <button type="button" class="btn btn-link bd-highlight return">Return to Home</button>
                             </div>
                         </div>
                         <div class="row about-artist d-flex justify-content-center">
@@ -137,66 +137,10 @@
                                 <h2 class="result-subtitle" id="events">Events</h2>
                             </div>
                         </div>
-                        <div class="row events-view">
-                            <div class="col-md-4">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h6 class="card-title">
-                                            <strong>
-                                                Event
-                                            </strong>
-                                        </h6>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="card-text">Event Name</p>
-                                        <p class="card-text">Venue</p>
-                                        <p class="card-text">Adrress</p>
-                                        <p class="card-text">Date</p>
-                                        <p class="card-text">Link</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h6 class="card-title">
-                                            <strong>
-                                                Event
-                                            </strong>
-                                        </h6>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="card-text">Event Name</p>
-                                        <p class="card-text">Venue</p>
-                                        <p class="card-text">Adrress</p>
-                                        <p class="card-text">Date</p>
-                                        <p class="card-text">Link</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h6 class="card-title">
-                                            <strong>
-                                                Event
-                                            </strong>
-                                        </h6>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="card-text">Event Name</p>
-                                        <p class="card-text">Venue</p>
-                                        <p class="card-text">Adrress</p>
-                                        <p class="card-text">Date</p>
-                                        <p class="card-text">Link</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
+                        <div class="row events-view" id="display-event"></div>
                         <div class="row">
                             <div class="col-3 col-sm-3 col-md-3 ml-auto mt-4 d-flex bd-highlight">
-                                <button type="button" class="btn btn-link ml-auto bd-highlight" id="return">Return to Home</button>
+                                <button type="button" class="btn btn-link ml-auto bd-highlight return">Return to Home</button>
                             </div>
                         </div>
                     </div>
@@ -206,6 +150,10 @@
         
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="assets/js/app.js"></script>
+    <!-- <script src="assets/js/getTMwLoc.js"></script> -->
+    <script src="assets/js/getTM.js"></script> -->
+    
 
 </body>
 
