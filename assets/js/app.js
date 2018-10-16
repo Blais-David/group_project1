@@ -7,6 +7,7 @@ const showResult = function (e) {
     const input = $("#searchInputField").val().trim();
     $("#searchInputField").val("");
     console.log(input);
+    getVideos(input);
     getTM(input);
 }
 

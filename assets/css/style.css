@@ -103,8 +103,9 @@ h1 {
     color: green;
 }
 
-
-
+#player {
+    padding: 40px;
+}
 
 
 @media screen and (min-width: 576px) { 

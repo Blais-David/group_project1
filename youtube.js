@@ -1,7 +1,6 @@
-const display = function () {
+const getVideos = function (artistSearch) {
 
-    const search = `reel big fish`; // ultimately, needs to come from the user input
-    const queryURL = `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&videoCategoryId=10&q=official+artist+${search}+music+video&key=AIzaSyBDHgNrXt8uep7b275-JyfCa7gPVgYSJ3Y&part=snippet,contentDetails,statistics,status`;
+    const queryURL = `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&videoCategoryId=10&q=official+artist+${artistSearch}+music+video&key=AIzaSyBDHgNrXt8uep7b275-JyfCa7gPVgYSJ3Y&part=snippet,contentDetails,statistics,status`;
 
     $.ajax({
         url: queryURL,
@@ -17,12 +16,10 @@ const display = function () {
             const videoIdent = videos[i].id.videoId;
             console.log(videoIdent);
 
-            const youTubePlayer = $(`<iframe width="426" height="240" src="https://www.youtube.com/embed/${videoIdent}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`);
+            const youTubePlayer = $(`<iframe width="256" height="144" src="https://www.youtube.com/embed/${videoIdent}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`);
             $('#player').append(youTubePlayer);
 
         }
     });
 
 }
-
-display();
