@@ -7,7 +7,6 @@ const getTM = function (artistName) {
         url: queryURL,
         method: "GET"
     }).then(function (response) {
-        console.log(response);
 
         for (let i = 0; i < response._embedded.events.length; i++) {
 
