@@ -23,6 +23,8 @@ const requestBio = function (userQuery) {
         }).then(function(response) {
         console.log(response)
         let bioParse = response.artist.bio.content;
+        console.log('bioparse:');
+        console.log(bioParse);
         bioParse = bioParse.split(`\n`);
         let bioFinal = `${bioParse[0]}\n${bioParse[2]}`; 
 
