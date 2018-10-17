@@ -1,29 +1,24 @@
-body {
+body, html {
     background: url("../images/symphony.png");
     height: 100%;
     width: 100%;
 }
 
+::-webkit-input-placeholder {
+    text-align: center;
+ }
+
 .home-page {
     background: rgb(63,63,191,0.33);
     border: 1px solid black;
-    height: 100%;
-    top: 50px;
-    left: 260px;
+    width: 80%;
 }
 
 .hide {
     display: none;
 }
 
-.app-name {
-    font-family: 'Nosifer', 'cursive';
-    top: 130px;
-    left: 95px;
-}
-
 .app-text  {
-    font-size: 80px;
     line-height: 1.5;
 }
 
