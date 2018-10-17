@@ -10,8 +10,6 @@ const getVideo = function (artist) {
         // const videosDiv = $("<div>").addClass("col-md-4");
         let videos = response.items;
 
-        console.log(videos);
-
         //The path to a specific video ID.
         for (let i = 0; i < videos.length; i++) {
             let videoIdent = videos[i].id.videoId;

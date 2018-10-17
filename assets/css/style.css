@@ -22,17 +22,36 @@ body, html {
     line-height: 1.5;
 }
 
+#sidebar {
+    position: fixed; 
+    top: 0; 
+    left: 0%; 
+    height: 100%; 
+    width: 300px; 
+    overflow-x: hidden; 
+    z-index: 1;
+}
+
 li, li a {
     width: 100%;
-    color: black;
+    
+    color: #000000;
 }
 
 li:hover {
     background-color: rgba(63, 63, 191, 0.363);
+    
+}
+
+.p-3 {
+    font-size: 20px;
+    font-weight: 430px;
+    line-height: 40px;
 }
 
 a:hover {
     text-decoration: none;
+    color: #000000;
 }
 
 #search-btn{
@@ -55,6 +74,11 @@ a:hover {
     background: rgba(0, 13, 194, 0.33);
 }
 
+#pageResults {
+    margin-left: 10%;
+    padding: 0px 50px;
+}
+
 .result-header {
     font-family: 'Nosifer', 'cursive';
     background: rgba(0, 13, 194, 0.33);
@@ -70,64 +94,54 @@ a:hover {
     color: green;
 }
 
-/* @media screen and (min-width: 576px) { 
-    .app-name {
-        font-size: 26px;
-        left: 40px;
+/* @media screen and (max-width: 1650px) { 
+    #sidebar {
+        position: fixed; 
+        top: 0; 
+        left: 5%; 
+        height: 100%; 
+        width: 175px; 
+        overflow-x: hidden; 
+        z-index: 1;
     }
-    .app-text {
-        font-size: 54px;
-    }
-    .search-area {
-
-        top : 150px;
-        left: 85px;
-    }
-    #result-appName {
-        font-size: 40px;
-        margin-left: 24px;
-        margin-top: 14px;
-    }
-}
-
-@media screen and (min-width: 768px) { 
-    .app-name {
-        font-size: 40px;
-    }
-    .app-text {
-        font-size: 75px;
-    }
-    .search-area {
-        top : 150px;
-        left: 225px;
-    }
-    #result-appName {
-        font-size: 60px;
-        margin-left: 30px;
-        margin-top: 14px;
-    }
-}
-
-@media screen and (min-width: 992px) { 
-    .app-name {
-        left: 85px;
-    }
-    .app-text {
-        font-size: 75px;
-    }
-    .search-area {
-        top : 170px;
-        left: 390px;
-    }
-    #search-btn{
-        top: 20px;
-        left: 90px;
     
-    }
-    #result-appName {
-        font-size: 83px;
-        margin-left: 30px;
-        margin-top: 14px;
+    #pageResults {
+        margin-left: 1%;
+        padding: 0px 10px;
     }
 } */
-   
+
+/* @media screen and (max-width: 1005px) { 
+    #sidebar {
+        position: fixed; 
+        top: 0; 
+        left: 0; 
+        height: 100%; 
+        width: 175px; 
+        overflow-x: hidden; 
+        z-index: 1;
+    }
+    
+    #pageResults {
+        margin-left: 160px;
+        padding: 0px 10px;
+    }
+} */
+
+@media screen and (max-width: 685px) { 
+    #sidebar {
+        position: fixed; 
+        top: 0; 
+        left: 0px; 
+        height: 100%; 
+        width: 175px; 
+        overflow-x: hidden; 
+        z-index: 1;
+    }
+    
+    #pageResults {
+        margin-left: 25%;
+        padding: 0px 10px;
+        overflow-x: hidden;
+    }    
+}

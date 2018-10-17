@@ -4,7 +4,6 @@ const getTMwLoc = function(artistName) {
     navigator.geolocation.getCurrentPosition(function(position){
       const lat = (position.coords.latitude);
       const long = (position.coords.longitude);
-      console.log(lat, long)
     
     const queryURL = `https://app.ticketmaster.com/discovery/v2/events.json?apikey=MdV4MZfCLGKGQ2tYAK3tZAsVQk74dUcp&keyword=${artistName}&radius=100&latlong=${lat},${long}`
     
@@ -12,7 +11,6 @@ const getTMwLoc = function(artistName) {
       url: queryURL,
       method: "GET"
   }).then(function (response) {
-      console.log(response);
 
       for (let i = 0; i < response._embedded.events.length; i++) {
 
