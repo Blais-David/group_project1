@@ -20,7 +20,7 @@
         <!-- BEGIN::Initial home page view -->
         <div class="row home-page justify-content-center m-0 mt-3">
             <div class="col-md-8 col-8 col-sm-8 col-lg-8 p-3 text-center">
-                <h1 class="app-text">Muzipedia<i class="fas fa-headphones" id="logo"></i></h1>
+                <h1 class="app-text"><img src="assets/images/logo.png" id="imglogo">uzipedia</h1>
                 <input type="text" class="form-control" placeholder="What artist would you like to search?" id="searchInputField">
                 <button class="btn mt-3" type="submit" id="search-btn">Go!</button>
             </div>
@@ -28,8 +28,10 @@
 
         <!-- BEGIN::Rendered Search page view -->
         <div class="row result-page hide">
-            <div class="col-3 col-sm-3 col-md-2 navigation p-3 justify-content-center align-items-center" id="sidebar">
-                <h5 class="text-center">Muzipedia<i class="fas fa-headphones"></i></h5>
+
+            <div class="col-3 col-sm-3 col-md-2 navigation p-3 justify-content-center align-items-center">
+                <h5 class="text-center"><img src="assets/images/logo.png" id="imglogo_sm">uzipedia</h5>
+
                 <ul class="p-3">
                     <li><a href="#">New Search</a></li>
                     <li><a href="#bio">Bio</a></li>
@@ -37,13 +39,14 @@
                     <li><a href="#events">Events</a></li>
                 </ul>
             </div>
-            <div class="col-9 col-sm-9 col-md-10" data-spy="scroll" data-target="#navbar-result" data-offset="0" id="pageResults">
+
+            <div class="col-9 col-sm-9 col-md-10 m-0 p-0" data-spy="scroll" data-target="#navbar-result" data-offset="0">
                 <div class="row bio">
                     <div class="col-md-12 d-flex bd-highlight">
-                        <h2 class="p-3 flex-grow-1" id="bio">Biography</h2>
+                        <h2 class="flex-grow-1 mb-3 p-3" id="bio">Biography</h2>
                     </div>
                 </div>
-                <div class="row about-artist d-flex justify-content-center">
+                <div class="row about-artist justify-content-center m-0 p-0">
                     <div class="col-md-8 ">
                         <div class="card">
                             <div class="card-header text-center" id="artist-name">
@@ -55,13 +58,13 @@
                 </div>
                 <div class="row playlist">
                     <div class="col-sm-10 col-md-10 col-lg-12">
-                        <h2 class="result-subtitle" id="playlist">Playlist</h2>
+                        <h2 class="result-subtitle my-3 p-3" id="playlist">Playlist</h2>
                     </div>
                 </div>
                 <div class="row playlist-videos" id="display-videos"></div>
                 <div class="row events">
                     <div class="col-md-12">
-                        <h2 class="result-subtitle" id="events">Events</h2>
+                        <h2 class="result-subtitle my-3 p-3" id="events">Events</h2>
                         <div>
                             <p><input type="checkbox" aria-label="toggle local" id="checkbox1"> Show Only Local
                                 Events</p>

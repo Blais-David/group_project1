@@ -54,6 +54,11 @@ a:hover {
     color: #000000;
 }
 
+h2{
+    width: 100%;
+    background-color: rgb(63,63,191,0.33);
+}
+
 #search-btn{
     width: 100px;
     background-color: rgba(63, 63, 191, 0.363);
@@ -68,6 +73,14 @@ a:hover {
 #artist-name {
     background:  rgba(0, 13, 194, 0.33);
     font-weight: bold;
+}
+
+#imglogo{
+    height: 50px;
+}
+
+#imglogo_sm{
+    height: 30px;
 }
 
 .navigation {
