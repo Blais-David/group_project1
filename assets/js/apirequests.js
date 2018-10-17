@@ -2,10 +2,7 @@
 const requestBio = function (userQuery) {
     const api_key = `2d3b9c4428453cbdd901c3f5715de047`;
     const correctionURL = `https://ws.audioscrobbler.com/2.0/?method=artist.getCorrection&artist=${userQuery}&api_key=${api_key}&format=json`;
-    console.log(correctionURL)
     
-    // const targetURL = `https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=${correctName}&api_key=${api_key}&format=json`;
-
 
     $.ajax({
         //url: `https://cors-anywhere.herokuapp.com/${targetURL}`,
@@ -15,13 +12,12 @@ const requestBio = function (userQuery) {
         const correctName = call.corrections.correction.artist.name
         
         const targetURL = `https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=${correctName}&api_key=${api_key}&format=json`;
-        console.log(targetURL)
+        
 
         $.ajax({
             url:targetURL,
             method: 'GET'
         }).then(function(response) {
-        console.log(response)
         let bioParse = response.artist.bio.content;
         bioParse = bioParse.split(`\n`);
         let bioFinal = `${bioParse[0]}\n${bioParse[2]}`; 
@@ -51,5 +47,3 @@ const requestBio = function (userQuery) {
 
     });
 };
-
-// 6f693d5a7ed0563d6c255ae3ec916ca6
