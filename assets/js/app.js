@@ -3,15 +3,15 @@
 const showResult = function (e) {
     e.preventDefault();
     const input = $("#searchInputField").val().trim();
-    getTM(input);
-    getTMwLoc(input);
-    requestBio(input);
-    $(".home-page").addClass("hide");
-    $(".result-page").removeClass("hide");
+    // getTM(input);
+    // getTMwLoc(input);
+    // requestBio(input);
+    // getVideo(input);
+    Promise.all([getTM(input), getTMwLoc(input), requestBio(input), getVideo(input)]).then(function () {
+        $(".home-page").addClass("hide");
+        $(".result-page").removeClass("hide");
+    });
     $("#searchInputField").val("");
-    console.log(input);
-    getVideo(input);
-    getTM(input);
     $("#display-event").empty();
     $("#display-event2").empty();
     $("#display-videos").empty();
