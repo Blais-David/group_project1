@@ -16,106 +16,75 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="row home-page d-flex justify-content-center">
-            <div class="col-md-8 col-8 col-sm-8 col-lg-8 p-3">
+    <div class="fluid-container">
+        <!-- BEGIN::Initial home page view -->
+        <div class="row home-page justify-content-center">
+            <div class="col-md-8 col-8 col-sm-8 col-lg-8 p-3 text-center">
                 <h1 class="app-text">Muzipedia<i class="fas fa-headphones" id="logo"></i></h1>
-            </div>
-            <div class="col-md-8 col-8 col-sm-8 col-lg-8 p-3">
                 <input type="text" class="form-control" placeholder="What artist would you like to search?" id="searchInputField">
                 <button class="btn m-2" type="submit" id="search-btn">Go!</button>
             </div>
         </div>
+
+        <!-- BEGIN::Rendered Search page view -->
         <div class="row result-page hide">
-            <div class="col-12 col-sm-12 col-md-12 p-3">
-                <div class="row">
-                    <div class="col-3 col-sm-3 col-md-2 navigation">
-                        <nav id="navbar-result" class="navbar">
-                            <div class="navbar-nav">
-                                <a class="navbar-brand">
-                                    <strong>
-                                        <i class="fas fa-headphones"></i>
-                                        Menu
-                                    </strong>
-                                </a>
-                            </div>
-                            <div class="navbar-nav">
-                                <a class="nav-item nav-link active" href="#bio">Bio<span class="sr-only">(current)</span></a>
-                                <a class="nav-item nav-link active" href="#playlist">Playlist<span class="sr-only">(current)</span></a>
-                                <a class="nav-item nav-link active" href="#events">Events<span class="sr-only">(current)</span></a>
-                            </div>
-                        </nav>
+            <div class="col-3 col-sm-3 col-md-2 navigation p-3 justify-content-center align-items-center">
+                <h5 class="text-center">Muzipedia<i class="fas fa-headphones"></i></h5>
+                <ul class="p-3">
+                    <li><a href="#">New Search</a></li>
+                    <li><a href="#bio">Bio</a></li>
+                    <li><a href="#playlist">Playlist</a></li>
+                    <li><a href="#events">Events</a></li>
+                </ul>
+            </div>
+            <div class="col-9 col-sm-9 col-md-10" data-spy="scroll" data-target="#navbar-result" data-offset="0">
+                <div class="row bio">
+                    <div class="col-md-12 d-flex bd-highlight">
+                        <h2 class="p-3 flex-grow-1" id="bio">Biography</h2>
                     </div>
-                    <div class="col-9 col-sm-9 col-md-10" data-spy="scroll" data-target="#navbar-result" data-offset="0">
-                        <div class="row result-header">
-                            <h1 id="result-appName">
-                                <strong>
-                                    Muzipedia
-                                    <i class="fas fa-headphones"></i>
-                                </strong>
-                            </h1>
-                        </div>
-                        <div class="row bio">
-                            <div class="col-md-12 d-flex bd-highlight">
-                                <h2 class="result-subtitle flex-grow-1" id="bio">Biography</h2>
-                                <button type="button" class="btn btn-link bd-highlight return">Return to Home</button>
+                </div>
+                <div class="row about-artist d-flex justify-content-center">
+                    <div class="col-md-8 ">
+                        <div class="card">
+                            <div class="card-header text-center" id="artist-name">
                             </div>
-                        </div>
-                        <div class="row about-artist d-flex justify-content-center">
-                            <div class="col-md-8 ">
-                                <div class="card">
-                                    <div class="card-header text-center" id="artist-name">
-
-                                    </div>
-                                    <div class="card-body" id="artist-meta">
-
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="row playlist">
-                            <div class="col-md-12">
-                                <h2 class="result-subtitle" id="playlist">Playlist</h2>
-                            </div>
-                        </div>
-                        <div class="row playlist-videos" id="display-videos"></div>
-                        <div class="row events">
-                            <div class="col-md-12">
-                                <h2 class="result-subtitle" id="events">Events</h2>
-                                <div>
-                                    <p><input type="checkbox" aria-label="toggle local" id="checkbox1"> Show Only Local
-                                        Events</p>
-
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="row events-view" id="display-event"></div>
-                        <div class="row events-view" id="display-event2" style="display:none;"></div>
-                        <div class="row">
-                            <div class="col-3 col-sm-3 col-md-3 ml-auto mt-4 d-flex bd-highlight">
-                                <button type="button" class="btn btn-link ml-auto bd-highlight return">Return to Home</button>
+                            <div class="card-body" id="artist-meta">
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="row playlist">
+                    <div class="col-md-12">
+                        <h2 class="result-subtitle" id="playlist">Playlist</h2>
+                    </div>
+                </div>
+                <div class="row playlist-videos" id="display-videos"></div>
+                <div class="row events">
+                    <div class="col-md-12">
+                        <h2 class="result-subtitle" id="events">Events</h2>
+                        <div>
+                            <p><input type="checkbox" aria-label="toggle local" id="checkbox1"> Show Only Local
+                                Events</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row events-view" id="display-event"></div>
+                <div class="row events-view" id="display-event2" style="display:none;"></div>
+                <div class="row">
+                    <div class="col-3 col-sm-3 col-md-3 ml-auto mt-4 d-flex bd-highlight">
+                        <button type="button" class="btn btn-link ml-auto bd-highlight return">Return to Home</button>
+                    </div>
+                </div>
             </div>
         </div>
-
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-    <script src="assets/js/getVideo.js"></script>
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/getVideo.js"></script>
     <script src="assets/js/getTMwLoc.js"></script>
     <script src="assets/js/getTM.js"></script>
-
     <script src="assets/js/apirequests.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        crossorigin="anonymous"></script>
-    <script src="youtube.js"></script>
-    <script src="assets/js/app.js"></script>
 
 </body>
 
