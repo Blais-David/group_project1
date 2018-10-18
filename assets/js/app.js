@@ -1,17 +1,14 @@
-//Show the result page
-
-
 const showResult = function (e) {
     e.preventDefault();
     const input = $("#searchInputField").val().trim();
-    Promise.all([getTM(input), getTMwLoc(input), requestBio(input), getVideo(input)]).then(function () {
+    Promise.all([getTM(input), getTMwLoc(input), requestBio(input), getVideo(input), requestDisco(input)]).then(function () {
         $(".home-page").addClass("hide");
         $(".result-page").removeClass("hide");
-        $(".nav-bar-cont").removeClass("hide");
     });
 
     $("#searchInputField").val("");
     $("#display-event").empty();
+    $("#album-container").empty();
     $("#display-event2").empty();
     $("#display-videos").empty();
 }

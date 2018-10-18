@@ -35,24 +35,26 @@
 
                 <h5 class="header" id="headerimg"><img src="assets/images/logo.png" id="imglogo_sm">uzipedia</h5>
 
-
-
-                <ul class="navbarList p-3">
-                    <li><button type="button" class="btn" id="btnSearch">New Search</button></li>
-                    <li><a href="#bio">Bio</a></li>
-                    <li><a href="#playlist">Playlist</a></li>
-                    <li><a href="#events">Events</a></li>
-                </ul>
-
-                <div class="smallBar">
-                    <ul class="navbarList2 p-3">
-                        <button type="button" class="btn" id="btnSearch2">New Search</button>
-                        <a href="#bio">| Bio</a>
-                        <a href="#playlist">| Playlist</a>
-                        <a href="#events">| Events</a>
+                
+                    <ul class="navbarList p-3">
+                        <li><button type="button" class="btn" id="btnSearch">New Search</button></li>
+                        <li><a href="#bio">Bio</a></li>
+                        <li><a href="#playlist">Playlist</a></li>
+                        <li><a href="#discography">Discography</a></li>
+                        <li><a href="#events">Events</a></li>
                     </ul>
                 </div>
 
+                    <div class="smallBar">
+                        <ul class="navbarList2 p-3">
+                            <button type="button" class="btn" id="btnSearch2">New Search</button>
+                            <a href="#bio">| Bio</a>
+                            <a href="#playlist">| Playlist</a>
+                            <a href="#discography">| Discography</a>
+                            <a href="#events">| Events</a>
+                        </ul>
+                    </div>
+                
             </div>
 
             <div class="col-9 col-sm-12 col-md-10 p-0" data-spy="scroll" data-target="#navbar-result" data-offset="0"
@@ -78,6 +80,12 @@
                     </div>
                 </div>
                 <div class="row playlist-videos p-3" id="display-videos"></div>
+                <div class="row discography">
+                    <div class="col-md-12 d-flex bd-highlight">
+                        <h2 class="result-subtitle my-3 p-3" id="discography">Discography</h2>
+                    </div>
+                </div>
+                <div class="row events-view p-3" id="album-container"></div>
                 <div class="row events">
                     <div class="col-md-12">
                         <h2 class="result-subtitle my-3 p-3" id="events">Events</h2>
@@ -87,6 +95,7 @@
                         </div>
                     </div>
                 </div>
+                
                 <div class="row events-view p-3" id="display-event"></div>
                 <div class="row events-view p-3" id="display-event2" style="display:none;"></div>
 
@@ -98,11 +107,8 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
     <script src="assets/js/getVideo.js"></script>
+    <script src="assets/js/discography.js"></script>
     <script src="assets/js/app.js"></script>
     <script src="assets/js/getTMwLoc.js"></script>
     <script src="assets/js/getTM.js"></script>
