@@ -5,10 +5,9 @@ const showResult = function (e) {
     e.preventDefault();
     const input = $("#searchInputField").val().trim();
     Promise.all([getTM(input), getTMwLoc(input), requestBio(input), getVideo(input)]).then(function () {
-        $(".home-page").hide();
-        $(".result-page").show();
-        // $(".home-page").addClass("hide");
-        // $(".result-page").removeClass("hide");
+        $(".home-page").addClass("hide");
+        $(".result-page").removeClass("hide");
+        $(".nav-bar-cont").removeClass("hide");
     });
 
     $("#searchInputField").val("");
@@ -18,8 +17,8 @@ const showResult = function (e) {
 }
 
 const showHome = function () {
-    $(".result-page").hide();
-    $(".home-page").show();
+    $(".result-page").addClass("hide");
+    $(".home-page").removeClass("hide");
 }
 
 
@@ -36,7 +35,11 @@ $("#checkbox1").click(function() {
     }
 });
 
+
+
 //Event listener for the single page application
 
 $("#search-btn").on("click", showResult);
-$("#newSearch").on("click", showHome);
+$("#btnSearch").on("click", showHome);
+$("#btnSearch2").on("click", showHome);
+

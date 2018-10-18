@@ -18,35 +18,49 @@ body, html {
     display: none;
 }
 
+
 .app-text  {
     line-height: 1.5;
 }
 
+#fullPage {
+    margin-left: 20%;
+}
+
+#headerimg{
+    text-align: center;
+}
+
+/* .icon-bar {
+    background-color: #000000;
+} */
+
 #sidebar {
     position: fixed; 
     top: 0; 
-    left: 0%; 
+    left: 0; 
     height: 100%; 
-    width: 300px; 
+    width: 300px;    
     overflow-x: hidden; 
     z-index: 1;
 }
 
-li, li a {
+#pageResults {
     width: 100%;
     
+}
+
+li, li a {
+    /* width: 100%; */
+    font-size: 20px;
+    font-weight: 430px;
+    line-height: 40px;
     color: #000000;
 }
 
 li:hover {
     background-color: rgba(63, 63, 191, 0.363);
     
-}
-
-.p-3 {
-    font-size: 20px;
-    font-weight: 430px;
-    line-height: 40px;
 }
 
 a:hover {
@@ -56,6 +70,7 @@ a:hover {
 
 h2{
     width: 100%;
+    
     background-color: rgb(63,63,191,0.33);
 }
 
@@ -80,16 +95,20 @@ h2{
 }
 
 #imglogo_sm{
-    height: 30px;
+    height: 45px;
+}
+
+#btnSearch {
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 430px;
+    text-align: inherit;
+    color: #000000;
+    padding: 0;
 }
 
 .navigation {
     background: rgba(0, 13, 194, 0.33);
-}
-
-#pageResults {
-    margin-left: 10%;
-    padding: 0px 50px;
 }
 
 .result-header {
@@ -97,64 +116,83 @@ h2{
     background: rgba(0, 13, 194, 0.33);
 }
 
-.event-card {
-    margin-top: 45px;
-}
 .state {
-    color: #ff3800;
+    color: #6468a1;
 }
 .event-date {
-    color: green;
+    color: #6468a1;
 }
 
-/* @media screen and (max-width: 1650px) { 
-    #sidebar {
-        position: fixed; 
-        top: 0; 
-        left: 5%; 
-        height: 100%; 
-        width: 175px; 
-        overflow-x: hidden; 
-        z-index: 1;
-    }
-    
-    #pageResults {
-        margin-left: 1%;
-        padding: 0px 10px;
-    }
-} */
+.smallBar {
+    display: none;
+}
 
-/* @media screen and (max-width: 1005px) { 
-    #sidebar {
-        position: fixed; 
-        top: 0; 
-        left: 0; 
-        height: 100%; 
-        width: 175px; 
-        overflow-x: hidden; 
+@media screen and (max-width: 770px) { 
+    #fullPage {
+        margin-top: 110px;
+        margin-left: 0;
         z-index: 1;
     }
     
     #pageResults {
-        margin-left: 160px;
-        padding: 0px 10px;
+    margin-left: -10px;
+    overflow-x: hidden;
+    z-index: 1;
     }
-} */
+    
+    #sidebar {
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    top: 0;
+    overflow: hidden;
+    }
 
-@media screen and (max-width: 685px) { 
-    #sidebar {
-        position: fixed; 
-        top: 0; 
-        left: 0px; 
-        height: 100%; 
-        width: 175px; 
-        overflow-x: hidden; 
-        z-index: 1;
+    #headerimg {
+    text-align: left; 
+    font-size: 40px;   
+    }
+
+    .navbarList {
+        margin-top: -50px;
+        display: none;
+    }
+
+    .navbarList2 {
+        display: inline;
+        position: relative;
+        float: right;
+        top: -70px;
+        z-index: 99;
+    }
+
+    .smallBar {
+        display: inline;
+    }
+
+    a {
+        font-size: 20px;
+        font-weight: 430px;
+        line-height: 40px;
+        color: #000000;
     }
     
-    #pageResults {
-        margin-left: 25%;
-        padding: 0px 10px;
-        overflow-x: hidden;
-    }    
+    a:hover {
+     text-decoration: underline;
+        
+    }
+
+    #btnSearch2 {
+        background-color: transparent;
+        font-size: 20px;
+        font-weight: 430px;
+        text-align: inherit;
+        color: #000000;
+        margin-top: -8px;
+        margin-right: -12px;
+    }
+
+    #btnSearch2:hover {
+        text-decoration: underline;
+    }
 }

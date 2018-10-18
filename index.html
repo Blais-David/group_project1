@@ -16,31 +16,46 @@
 </head>
 
 <body>
-    <div class="container d-flex justify-content-center">
+    <div class="container-fluid d-flex justify-content-center">
         <!-- BEGIN::Initial home page view -->
         <div class="row home-page justify-content-center m-0 mt-3">
             <div class="col-md-8 col-8 col-sm-8 col-lg-8 p-3 text-center">
                 <h1 class="app-text"><img src="assets/images/logo.png" id="imglogo">uzipedia</h1>
-                <input type="text" class="form-control" placeholder="What artist would you like to search?" id="searchInputField">
-                <button class="btn mt-3" type="submit" id="search-btn">Go!</button>
+                <form>
+                    <input type="text" class="form-control" placeholder="What artist would you like to search?" id="searchInputField">
+                    <button class="btn mt-3" type="submit" id="search-btn">Go!</button>
+                </form>
             </div>
         </div>
 
         <!-- BEGIN::Rendered Search page view -->
-        <div class="row result-page hide">
+        <div class="row result-page hide" id="fullPage">
 
-            <div class="col-3 col-sm-3 col-md-2 navigation p-3 justify-content-center align-items-center">
-                <h5 class="text-center"><img src="assets/images/logo.png" id="imglogo_sm">uzipedia</h5>
+            <div class="col-3 col-sm-12 col-md-2 navigation p-3 justify-content-center align-items-center" id="sidebar">
+                
+                <h5 class="header" id="headerimg"><img src="assets/images/logo.png" id="imglogo_sm">uzipedia</h5>
+                
 
-                <ul class="p-3">
-                    <li><a href="#">New Search</a></li>
-                    <li><a href="#bio">Bio</a></li>
-                    <li><a href="#playlist">Playlist</a></li>
-                    <li><a href="#events">Events</a></li>
-                </ul>
+                
+                    <ul class="navbarList p-3">
+                        <li><button type="button" class="btn" id="btnSearch">New Search</button></li>
+                        <li><a href="#bio">Bio</a></li>
+                        <li><a href="#playlist">Playlist</a></li>
+                        <li><a href="#events">Events</a></li>
+                    </ul>
+
+                    <div class="smallBar">
+                        <ul class="navbarList2 p-3">
+                            <button type="button" class="btn" id="btnSearch2">New Search</button>
+                            <a href="#bio">| Bio</a>
+                            <a href="#playlist">| Playlist</a>
+                            <a href="#events">| Events</a>
+                        </ul>
+                    </div>
+                
             </div>
 
-            <div class="col-9 col-sm-9 col-md-10 m-0 p-0" data-spy="scroll" data-target="#navbar-result" data-offset="0">
+            <div class="col-9 col-sm-12 col-md-10 p-0" data-spy="scroll" data-target="#navbar-result" data-offset="0" id="pageResults">
                 <div class="row bio">
                     <div class="col-md-12 d-flex bd-highlight">
                         <h2 class="flex-grow-1 mb-3 p-3" id="bio">Biography</h2>
@@ -57,27 +72,23 @@
                     </div>
                 </div>
                 <div class="row playlist">
-                    <div class="col-sm-10 col-md-10 col-lg-12">
+                    <div class="col-md-12 d-flex bd-highlight">
                         <h2 class="result-subtitle my-3 p-3" id="playlist">Playlist</h2>
                     </div>
                 </div>
-                <div class="row playlist-videos" id="display-videos"></div>
+                <div class="row playlist-videos p-3" id="display-videos"></div>
                 <div class="row events">
                     <div class="col-md-12">
                         <h2 class="result-subtitle my-3 p-3" id="events">Events</h2>
-                        <div>
+                        <div class="p-3">
                             <p><input type="checkbox" aria-label="toggle local" id="checkbox1"> Show Only Local
                                 Events</p>
                         </div>
                     </div>
                 </div>
-                <div class="row events-view" id="display-event"></div>
-                <div class="row events-view" id="display-event2" style="display:none;"></div>
-                <div class="row">
-                    <div class="col-3 col-sm-3 col-md-3 ml-auto mt-4 d-flex bd-highlight">
-                        <button type="button" class="btn btn-link ml-auto bd-highlight return">Return to Home</button>
-                    </div>
-                </div>
+                <div class="row events-view p-3" id="display-event"></div>
+                <div class="row events-view p-3" id="display-event2" style="display:none;"></div>
+
             </div>
         </div>
     </div>
@@ -86,6 +97,8 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="assets/js/getVideo.js"></script>
     <script src="assets/js/app.js"></script>
     <script src="assets/js/getTMwLoc.js"></script>
