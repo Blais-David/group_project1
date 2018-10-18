@@ -31,10 +31,6 @@ body, html {
     text-align: center;
 }
 
-/* .icon-bar {
-    background-color: #000000;
-} */
-
 #sidebar {
     position: fixed; 
     top: 0; 
@@ -51,7 +47,6 @@ body, html {
 }
 
 li, li a {
-    /* width: 100%; */
     font-size: 20px;
     font-weight: 430px;
     line-height: 40px;
@@ -196,3 +191,4 @@ h2{
         text-decoration: underline;
     }
 }
+
