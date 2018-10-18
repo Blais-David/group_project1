@@ -12,6 +12,7 @@ body, html {
     background: rgb(63,63,191,0.33);
     border: 1px solid black;
     width: 80%;
+    max-width: 650px;
 }
 
 .hide {
@@ -31,6 +32,10 @@ body, html {
     text-align: center;
 }
 
+/* .icon-bar {
+    background-color: #000000;
+} */
+
 #sidebar {
     position: fixed; 
     top: 0; 
@@ -42,11 +47,11 @@ body, html {
 }
 
 #pageResults {
-    width: 100%;
-    
+    width: 100%; 
 }
 
 li, li a {
+    /* width: 100%; */
     font-size: 20px;
     font-weight: 430px;
     line-height: 40px;
@@ -90,7 +95,7 @@ h2{
 }
 
 #imglogo_sm{
-    height: 45px;
+    height: 20px;
 }
 
 #btnSearch {
@@ -100,6 +105,7 @@ h2{
     text-align: inherit;
     color: #000000;
     padding: 0;
+    padding-bottom: 5px;
 }
 
 .navigation {
@@ -122,7 +128,40 @@ h2{
     display: none;
 }
 
-@media screen and (max-width: 770px) { 
+@media screen and (max-width: 490px) { 
+    h1{
+        font-size: 26px;
+    }
+    #imglogo{
+        width: 25px;
+        height: 29px;
+    }
+}
+
+/* @media screen and (max-width: 800px) { 
+
+} */
+
+@media screen and (max-width: 575px){
+    #sidebar{
+        flex-basis: 100%;
+    }
+    .col-sm-2{
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+    .col-3{
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+    .col-9{
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+
+}
+
+ @media screen and (max-width: 770px) { 
     #fullPage {
         margin-top: 110px;
         margin-left: 0;
@@ -145,7 +184,16 @@ h2{
 
     #headerimg {
     text-align: left; 
-    font-size: 40px;   
+    font-size: 26px;
+    padding-top: 30px;   
+    padding-left: 30px;
+    }
+
+    ul {
+        margin-top: 13px;        
+    }
+    ul a{
+        font-size: 16px;
     }
 
     .navbarList {
@@ -163,6 +211,7 @@ h2{
 
     .smallBar {
         display: inline;
+        padding-bottom: 15px;
     }
 
     a {
@@ -179,16 +228,24 @@ h2{
 
     #btnSearch2 {
         background-color: transparent;
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 430px;
         text-align: inherit;
         color: #000000;
-        margin-top: -8px;
+        margin-top: -4px;
         margin-right: -12px;
     }
 
     #btnSearch2:hover {
         text-decoration: underline;
     }
-}
 
+    .col-sm-2{
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+    .col-3{
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+}  
