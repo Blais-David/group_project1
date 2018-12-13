@@ -25,3 +25,6 @@ Muzipedia is your one-stop search engine for melding multiple aspects into a sin
 - Public REST APIs
 - lots of ES6 Javascript
 - Git/Bash of course
+
+#Link To The Deployed App
+https://blais-david.github.io/group_project1/
